@@ -1,0 +1,36 @@
+﻿@model BitCubeStoreImplementation.Models.Product
+
+@{
+    ViewData["Title"] = "Sell";
+}
+
+<h1 class="text-center">Product to buy</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Sell">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label">Item <i class="bi bi-laptop"></i> | <i class="bi bi-tablet-landscape"></i> | <i class="bi bi-phone-vibrate"></i></label>
+                <select asp-for="Category" asp-items="Html.GetEnumSelectList<ProductCategory>()" class="form-control"></select>
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NumberOfItems" class="control-label"> Number of items</label>
+                <input asp-for="NumberOfItems" class="form-control"  />
+                <span asp-validation-for="NumberOfItems" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="btnBuy" value="Buy" class="btn btn-primary btn-block" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

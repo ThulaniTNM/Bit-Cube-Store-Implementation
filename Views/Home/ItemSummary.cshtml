@@ -1,0 +1,29 @@
+﻿@model BitCubeStoreImplementation.Models.InventoryItemSummary
+
+@{
+    ViewData["Title"] = "ItemSummary";
+}
+
+<h1>Item Summary</h1>
+<h2>@Model.ProductName</h2>
+
+<div>
+    <h4> <i class="bi @Model.productIconInfo"></i></h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            <label> Product average price</label>
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-3">
+            <label>Number of available items</label>
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.NumOfProducts)
+        </dd>
+
+    </dl>
+</div>
+

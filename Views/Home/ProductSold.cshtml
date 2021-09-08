@@ -1,0 +1,49 @@
+﻿@model BitCubeStoreImplementation.Models.ProductsSoldResult
+
+@{
+    ViewData["Title"] = "ProductSold";
+}
+
+<h1>Product Sold Result</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Result Confirmation</label>
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ResultConfirmation)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Category</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductSoldResult.ProductSold.Category)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Number of items</label>
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductSoldResult.ProductSold.NumberOfItems)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            <label>Price</label>
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductSoldResult.ProductSold.Price)
+        </dd>
+    </dl>
+</div>
+

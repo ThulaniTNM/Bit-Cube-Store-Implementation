@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitCubeStoreImplementation", "BitCubeStoreImplementation.csproj", "{7C2BD9D3-2A50-4EA0-BDC5-8E5B5143674E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C2BD9D3-2A50-4EA0-BDC5-8E5B5143674E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2BD9D3-2A50-4EA0-BDC5-8E5B5143674E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2BD9D3-2A50-4EA0-BDC5-8E5B5143674E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2BD9D3-2A50-4EA0-BDC5-8E5B5143674E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7CC1C06-B4CF-44DD-A9D3-0EFCCAC38CB2}
+	EndGlobalSection
+EndGlobal
