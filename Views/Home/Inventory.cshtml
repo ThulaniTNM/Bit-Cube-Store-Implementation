@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BitCubeStoreImplementation.Models.Product>
+
+@{
+    ViewData["Title"] = "Inventory";
+}
+
+<h1>Items in Inventory</h1>
+
+
+
+<div >
+
+    <table class="table table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Price)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfItems)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr >
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumberOfItems)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+

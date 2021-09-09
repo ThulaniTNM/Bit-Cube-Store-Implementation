@@ -52,8 +52,9 @@ namespace BitCubeStoreImplementation.Controllers {
 
             return View("ItemSummary",_onlineStore.GetInventoryItemSummary(stock));
         }
-        public IActionResult Privacy() {
-            return View();
+        public IActionResult Inventory() {
+            
+            return View(_onlineStore.GetInventorySummary().Products);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
